@@ -11,10 +11,10 @@
 <script type="text/bitsyGameData" id="exportedGameData">
 "marunong ako konti tagolog"
 
-# BITSY VERSION 8.3
+# BITSY VERSION 8.4
 
 ! VER_MAJ 8
-! VER_MIN 3
+! VER_MIN 4
 ! ROOM_FORMAT 1
 ! DLG_COMPAT 0
 ! TXT_MODE 0
@@ -81,7 +81,7 @@ ROOM 1
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,k,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 ITM 9 10,13
@@ -116,14 +116,14 @@ j,j,0,0,0,j,j,j,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 ITM h 3,4
 ITM m 1,8
-EXT 0,0 4 13,13
+EXT 0,0 4 13,13 FX fade_w
 PAL 1
 
 ROOM 3
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,k,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -140,7 +140,7 @@ ITM i 7,11
 ITM j 4,7
 ITM k 10,6
 ITM l 5,3
-EXT 2,3 2 4,14
+EXT 2,3 2 4,14 FX fade_w
 PAL 2
 
 ROOM 4
@@ -162,6 +162,38 @@ ROOM 4
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 ITM o 7,7
 ITM p 2,2
+EXT 2,2 5 13,13 FX fade_w DLG v
+PAL 0
+
+ROOM 5
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,l,l,l,l,l,l,l,l,l,l,l,l,l,l,l
+0,l,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,l,l,l,l,l,l,l,l,l,l,l,l,l,l,l
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+l,l,l,l,l,l,l,l,l,l,l,l,l,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,l,l,l,l,l,l,l,l,l
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+l,l,l,l,l,l,l,l,l,l,l,l,l,l,l,l
+ITM q 9,13
+ITM r 4,10
+ITM s 10,5
+ITM t 0,3
+ITM u 3,0
+ITM v 7,0
+ITM w 9,0
+ITM x 11,0
+ITM y 12,0
+ITM z 13,0
+ITM 10 15,0
+END 16 15,0
 PAL 0
 
 TIL b
@@ -264,6 +296,37 @@ TIL j
 00001010
 00000001
 NAME vines
+WAL true
+
+TIL k
+00000000
+00100000
+01110100
+00100100
+00100100
+00101110
+00000100
+00000000
+>
+00000000
+00100000
+00100100
+00101110
+01110100
+00100100
+00000100
+00000000
+WAL false
+
+TIL l
+00000000
+00000000
+11111111
+00000000
+00000000
+11111111
+00000000
+00000000
 WAL true
 
 SPR A
@@ -542,6 +605,25 @@ ITM 9
 11110111
 NAME poem intro
 DLG 9
+
+ITM 10
+00000000
+00100100
+01110100
+00100100
+00100100
+00101110
+00100100
+00000000
+>
+00000000
+00100100
+00101110
+00100100
+00100100
+01110100
+00100100
+00000000
 
 ITM a
 00000000
@@ -869,9 +951,151 @@ ITM p
 00000000
 DLG u
 
+ITM q
+00000000
+01000010
+01111111
+01001011
+01010011
+01001010
+01111110
+00000000
+>
+00000000
+01000010
+01111111
+01010011
+01001011
+01010010
+01111110
+00000000
+NAME beer
+DLG w
+
+ITM r
+01111110
+11010011
+10010001
+11110001
+10000001
+10000001
+11000011
+01111110
+>
+01111110
+11010011
+10010001
+10010001
+10010001
+10010001
+11010011
+01111110
+NAME clock
+DLG x
+
+ITM s
+11111110
+10000010
+10101010
+10000010
+10101010
+10000010
+10010010
+11111110
+>
+11111110
+10000010
+10101010
+10000010
+10101010
+10000010
+10000010
+11111110
+NAME phone
+DLG y
+
+ITM t
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+DLG z
+
+ITM u
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+DLG 10
+
+ITM v
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+DLG 11
+
+ITM w
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+DLG 12
+
+ITM x
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+DLG 13
+
+ITM y
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+DLG 14
+
+ITM z
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+DLG 15
+
 DLG 2
 """
 Who was that narrator? Plunging you into this game with a foreign language and self-inserting too much?
+
+Is he the same person that was reciting that poem in mediocre Tagalog just now?
 
 No matter, first you take a puff of this dart.
 
@@ -890,6 +1114,8 @@ The language that was spoken to me when I was little.
 It was quickly overtaken by English and Mandarin as the years went by.
 
 I never got around to learning it.
+ 
+Forgive me for how bad it must have sounded just now, when reciting the poem.
 """
 NAME translate 1 dialog
 
@@ -970,6 +1196,44 @@ Construct it however you want.
 Or not. You could restart the game and get back to the main room with the cat.
 """
 NAME item 9 dialog
+
+DLG 10
+"""
+I can't wait to go home, to have some pork steak.
+
+The pork thighs with a mixture of calamansi, soy sauce and onions.
+"""
+NAME item u dialog
+
+DLG 11
+A friend told me in class that St Alban's was not too far away. Maybe I should make the trip soon.
+NAME item v dialog
+
+DLG 12
+"""
+Treasure those you hold dear, cherish the sights, sounds, smells etc.
+
+I wonder where that snarky 2nd narrator went to. 
+
+I wonder if we all have this little snarky narrator within us.
+"""
+NAME item w dialog
+
+DLG 13
+tama na
+NAME item x dialog
+
+DLG 14
+bahala ka sa buhay mo
+NAME item y dialog
+
+DLG 15
+mahal kita
+NAME item z dialog
+
+DLG 16
+next time, i will try to do better than
+NAME ending 1
 
 DLG a
 fissures of a time lost
@@ -1089,7 +1353,6 @@ DLG k
     ...
     
     this living creature
-
 }
 """
 NAME worm dialog
@@ -1113,15 +1376,39 @@ a convenient place of osmosis.{exit "3" 3 13 "fade_b"}
 NAME flats dialog
 
 DLG n
+"""
 mahal kita
+
+...
+
+...
+
+i love you
+"""
 NAME dust dialog
 
 DLG o
+"""
 bahala ka sa buhay mo
+
+...
+
+...
+
+take care of your life
+"""
 NAME dust 2  dialog
 
 DLG p
+"""
 tama na
+
+...
+
+...
+
+that's enough
+"""
 NAME dust 3 dialog
 
 DLG q
@@ -1129,6 +1416,8 @@ DLG q
 marunong ako konti tagalog 
 
 ...
+
+i know a bit of tagalog
 
 ...
 
@@ -1138,7 +1427,6 @@ this one was often said to the roulette wheel of guests throughout the years
 
 ...
 
-the exit is on the left of this tile
 """
 NAME dust 4 dialog
 
@@ -1178,49 +1466,52 @@ NAME star 7 dialog
 
 DLG t
 """
-Here.
-
 Number 5.
 
-Unless you have been avoiding these darts to get here.
+Trying to learn one's mother tongue is tough huh.
 
-If so, I applaud you, couldn't be me.
+Especially when realising that, all these years, you were ashamed of being Filipino. 
 
-But then again, you probably missed out on some key dialogue.
+You would detest hanging out with other Filipinos, the children of your parent's new friends here in Singapore. 
 
-You should get to it.
+They were happy to find people of similar cultural backgrounds.
 
-...
-
-...
-
-...
+Why weren't you?
 
 """
 NAME item o dialog
 
 DLG u
-"""
-Okay hello, Ryan here. This is not part of the game. This is as far as it gets before workshopping.
 
-The main idea here is to discuss the loss of mother tongue, 
-cultural estrangement, longing, amongst other things. 
-
-Some of the cigarettes have that {wvy}other{/wvy} narrator. Self-doubt. Think we all might know a thing or two about that.
-
-Maybe I should leave this in the game.
-
-Of course I will take out my name.
-
-Tama na. 
-
-Bahala ka sa buhay mo.
-
-Mahal kita.
-
-Marunong ako konti tagalog.
-"""
 NAME item p dialog
+
+DLG v
+You must be confused. I am too. Constantly. 
+NAME exit narration 2
+
+DLG w
+Sipping beer at seven in the morning
+NAME item q dialog
+
+DLG x
+ages of time reduced to 
+NAME item r dialog
+
+DLG y
+a cradled phone connected to black earphones.
+NAME item s dialog
+
+DLG z
+"""
+I broke down around two months ago, on a phone call with my partner.
+
+I told her that I missed my family.
+
+And that maybe I should have tried harder do the little things.
+
+Like learn Tagalog.
+"""
+NAME item t dialog
 
 VAR a
 42
@@ -2577,7 +2868,7 @@ var bitsy = mainProcess.system;
 // is this the right place for this to live?
 var version = {
 	major: 8, // major changes
-	minor: 3, // smaller changes
+	minor: 4, // smaller changes
 	devBuildPhase: "RELEASE",
 };
 function getEngineVersion() {
